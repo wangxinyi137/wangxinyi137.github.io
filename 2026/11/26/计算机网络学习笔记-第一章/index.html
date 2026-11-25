@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>计算机网络学习笔记-第一章 | 王欣旖的博客</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Day1： 1.pycharm的安装与基础使用   2.认识了什么是变量 ,print,函数，type语句，三种常见的字面量（int,float,字符串）变量是用来贮存数据的   print（a,b,c,d….)    输出字符串是要加双引号print(“aaaaa”)  int float不用   !(C:\Users\王欣旖\Pictures\Screenshots\屏幕截图 2026-11-">
+<meta property="og:type" content="article">
+<meta property="og:title" content="计算机网络学习笔记-第一章">
+<meta property="og:url" content="https://wangxinyi137.github.io/2026/11/26/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E7%AC%AC%E4%B8%80%E7%AB%A0/index.html">
+<meta property="og:site_name" content="王欣旖的博客">
+<meta property="og:description" content="Day1： 1.pycharm的安装与基础使用   2.认识了什么是变量 ,print,函数，type语句，三种常见的字面量（int,float,字符串）变量是用来贮存数据的   print（a,b,c,d….)    输出字符串是要加双引号print(“aaaaa”)  int float不用   !(C:\Users\王欣旖\Pictures\Screenshots\屏幕截图 2026-11-">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="file:///C:/Users/%E7%8E%8B%E6%AC%A3%E6%97%96/Pictures/Screenshots/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202026-11-22%20160240.png?lastModify=1795625000">
+<meta property="og:image" content="file:///C:/Users/%E7%8E%8B%E6%AC%A3%E6%97%96/Pictures/Screenshots/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202026-11-22%20210241.png?lastModify=1795625000">
+<meta property="og:image" content="file:///C:/Users/%E7%8E%8B%E6%AC%A3%E6%97%96/Pictures/Screenshots/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202026-11-22%20165247.png?lastModify=1795625000">
+<meta property="og:image" content="file:///C:/Users/%E7%8E%8B%E6%AC%A3%E6%97%96/Pictures/Screenshots/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202026-11-22%20170332.png?lastModify=1795625000">
+<meta property="og:image" content="file:///C:/Users/%E7%8E%8B%E6%AC%A3%E6%97%96/Pictures/Screenshots/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202026-11-22%20155008.png?lastModify=1795625000">
+<meta property="og:image" content="file:///C:/Users/%E7%8E%8B%E6%AC%A3%E6%97%96/Pictures/Screenshots/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202026-11-22%20172948.png?lastModify=1795625000">
+<meta property="og:image" content="file:///C:/Users/%E7%8E%8B%E6%AC%A3%E6%97%96/Pictures/Screenshots/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202026-11-22%20172615.png?lastModify=1795625000">
+<meta property="og:image" content="file:///C:/Users/%E7%8E%8B%E6%AC%A3%E6%97%96/Pictures/Screenshots/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202026-11-24%20163743.png?lastModify=1795625000">
+<meta property="og:image" content="file:///C:/Users/%E7%8E%8B%E6%AC%A3%E6%97%96/Pictures/Screenshots/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202026-11-24%20172703.png?lastModify=1795625000">
+<meta property="article:published_time" content="2026-11-25T16:34:40.000Z">
+<meta property="article:modified_time" content="2026-11-25T22:24:24.327Z">
+<meta property="article:author" content="wangxinyi137">
+<meta property="article:tag" content="pycharm">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="file:///C:/Users/%E7%8E%8B%E6%AC%A3%E6%97%96/Pictures/Screenshots/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202026-11-22%20160240.png?lastModify=1795625000">
+  
+    <link rel="alternate" href="/atom.xml" title="王欣旖的博客" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css">
+
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">王欣旖的博客</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+        
+          <a class="nav-icon" href="/atom.xml" title="RSS 订阅"><span class="fa fa-rss"></span></a>
+        
+        <a class="nav-icon nav-search-btn" title="搜索"><span class="fa fa-search"></span></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="搜索"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://wangxinyi137.github.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-计算机网络学习笔记-第一章" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2026/11/26/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E7%AC%AC%E4%B8%80%E7%AB%A0/" class="article-date">
+  <time class="dt-published" datetime="2026-11-25T16:34:40.000Z" itemprop="datePublished">2026-11-26</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/py/">py</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      计算机网络学习笔记-第一章
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>Day1：</p>
+<p>1.pycharm的安装与基础使用 <img src="file://C:/Users/%E7%8E%8B%E6%AC%A3%E6%97%96/Pictures/Screenshots/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202026-11-22%20160240.png?lastModify=1795625000" alt="屏幕截图 2026-11-22 160240"></p>
+<p><img src="file://C:/Users/%E7%8E%8B%E6%AC%A3%E6%97%96/Pictures/Screenshots/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202026-11-22%20210241.png?lastModify=1795625000" alt="屏幕截图 2026-11-22 210241"></p>
+<p><img src="file://C:/Users/%E7%8E%8B%E6%AC%A3%E6%97%96/Pictures/Screenshots/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202026-11-22%20165247.png?lastModify=1795625000" alt="屏幕截图 2026-11-22 172654">2.认识了什么是变量 ,print,函数，type语句，三种常见的字面量（int,float,字符串）变量是用来贮存数据的   print（a,b,c,d….)    输出字符串是要加双引号print(“aaaaa”)  int float不用   !(C:\Users\王欣旖\Pictures\Screenshots\屏幕截图 2026-11-22 170625.png)   type语句是用来查看数据类型的   python程序开发的三种方法  a.Win+R  cmd 输入python 执行单行代码&#x2F;创建py文件 在终端里执行python文件      b.pycharm <img src="file://C:/Users/%E7%8E%8B%E6%AC%A3%E6%97%96/Pictures/Screenshots/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202026-11-22%20170332.png?lastModify=1795625000" alt="屏幕截图 2026-11-22 170332"></p>
+<p><img src="file://C:/Users/%E7%8E%8B%E6%AC%A3%E6%97%96/Pictures/Screenshots/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202026-11-22%20155008.png?lastModify=1795625000" alt="屏幕截图 2026-11-22 154453"></p>
+<p><img src="file://C:/Users/%E7%8E%8B%E6%AC%A3%E6%97%96/Pictures/Screenshots/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202026-11-22%20172948.png?lastModify=1795625000" alt="屏幕截图 2026-11-22 172948"></p>
+<p><img src="file://C:/Users/%E7%8E%8B%E6%AC%A3%E6%97%96/Pictures/Screenshots/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202026-11-22%20172615.png?lastModify=1795625000" alt="屏幕截图 2026-11-22 172615">3.变量没有类型，但是他储存的数据有类型 </p>
+<p>   <img src="file://C:/Users/%E7%8E%8B%E6%AC%A3%E6%97%96/Pictures/Screenshots/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202026-11-24%20163743.png?lastModify=1795625000" alt="屏幕截图 2026-11-24 163743"></p>
+<p><img src="file://C:/Users/%E7%8E%8B%E6%AC%A3%E6%97%96/Pictures/Screenshots/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202026-11-24%20172703.png?lastModify=1795625000" alt="img"></p>
+<p>注意：</p>
+<p>1.在终端中运行python文件时不要进入python直接在cmd里</p>
+<p>2.上图的错误主要是路径问题</p>
+<p>python Untitled.py  你只写文件名，系统会在当前这个文件夹（C:\Users\王欣旖）里面找 Untitled.py，但是这个文件实际放在  D:\python2\ ，C盘里根本没有这个文件，所以报错： No such file or directory （找不到文件）</p>
+<ol>
+<li>python D:\python2\Untitled.py  你写了完整绝对路径，直接告诉Python去D盘这个位置找文件，不管终端现在在哪，都能定位到，所以成功输出了  hello</li>
+</ol>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://wangxinyi137.github.io/2026/11/26/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E7%AC%AC%E4%B8%80%E7%AB%A0/" data-id="cmwwoy3u80000p08f9aekatuu" data-title="计算机网络学习笔记-第一章" class="article-share-link"><span class="fa fa-share">分享</span></a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/pycharm/" rel="tag">pycharm</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2026/11/25/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">后一篇</strong>
+      <div class="article-nav-title">Hello World</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">分类</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/py/">py</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/pycharm/" rel="tag">pycharm</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签云</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/pycharm/" style="font-size: 10px;">pycharm</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">归档</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2026/11/">十一月 2026</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2026/11/26/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E7%AC%AC%E4%B8%80%E7%AB%A0/">计算机网络学习笔记-第一章</a>
+          </li>
+        
+          <li>
+            <a href="/2026/11/25/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2026 wangxinyi137<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.6.4.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>
