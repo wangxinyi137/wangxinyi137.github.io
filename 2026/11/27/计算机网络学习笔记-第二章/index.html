@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>计算机网络学习笔记-第二章 | 王欣旖的博客</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Day2: VScode的安装 基础使用 界面功能 python变量赋值：每个变量在使用前都必须赋值，变量赋值以后该变量才会被创建。 等号 &#x3D; 用来给变量赋值。 等号 &#x3D; 运算符左边是一个变量名，等号 &#x3D; 运算符右边是存储在变量中的值 Python有五个标准的数据类型：Numbers（数字）String（字符串）List（列表）Tuple（元组）Dictionary（">
+<meta property="og:type" content="article">
+<meta property="og:title" content="计算机网络学习笔记-第二章">
+<meta property="og:url" content="https://wangxinyi137.github.io/2026/11/27/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E7%AC%AC%E4%BA%8C%E7%AB%A0/index.html">
+<meta property="og:site_name" content="王欣旖的博客">
+<meta property="og:description" content="Day2: VScode的安装 基础使用 界面功能 python变量赋值：每个变量在使用前都必须赋值，变量赋值以后该变量才会被创建。 等号 &#x3D; 用来给变量赋值。 等号 &#x3D; 运算符左边是一个变量名，等号 &#x3D; 运算符右边是存储在变量中的值 Python有五个标准的数据类型：Numbers（数字）String（字符串）List（列表）Tuple（元组）Dictionary（">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://wangxinyi137.github.io/2026/11/27/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E7%AC%AC%E4%BA%8C%E7%AB%A0/2026-11-23-171011.png">
+<meta property="og:image" content="https://wangxinyi137.github.io/2026/11/27/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E7%AC%AC%E4%BA%8C%E7%AB%A0/2026-11-23-171542.png">
+<meta property="og:image" content="https://wangxinyi137.github.io/2026/11/27/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E7%AC%AC%E4%BA%8C%E7%AB%A0/2026-11-23-164527.png">
+<meta property="og:image" content="https://wangxinyi137.github.io/2026/11/27/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E7%AC%AC%E4%BA%8C%E7%AB%A0/2026-11-23-170431.png">
+<meta property="og:image" content="https://wangxinyi137.github.io/2026/11/27/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E7%AC%AC%E4%BA%8C%E7%AB%A0/2026-11-23-175803.png">
+<meta property="og:image" content="https://wangxinyi137.github.io/2026/11/27/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E7%AC%AC%E4%BA%8C%E7%AB%A0/2026-11-23-175953.png">
+<meta property="article:published_time" content="2026-11-27T01:30:00.000Z">
+<meta property="article:modified_time" content="2026-11-27T01:38:36.913Z">
+<meta property="article:author" content="wangxinyi137">
+<meta property="article:tag" content="python">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://wangxinyi137.github.io/2026/11/27/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E7%AC%AC%E4%BA%8C%E7%AB%A0/2026-11-23-171011.png">
+  
+    <link rel="alternate" href="/atom.xml" title="王欣旖的博客" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css">
+
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">王欣旖的博客</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+        
+          <a class="nav-icon" href="/atom.xml" title="RSS 订阅"><span class="fa fa-rss"></span></a>
+        
+        <a class="nav-icon nav-search-btn" title="搜索"><span class="fa fa-search"></span></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="搜索"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://wangxinyi137.github.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-计算机网络学习笔记-第二章" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2026/11/27/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E7%AC%AC%E4%BA%8C%E7%AB%A0/" class="article-date">
+  <time class="dt-published" datetime="2026-11-27T01:30:00.000Z" itemprop="datePublished">2026-11-27</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/py/">py</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      计算机网络学习笔记-第二章
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>Day2:</p>
+<p>VScode的安装 基础使用 界面功能</p>
+<p>python<strong>变量</strong>赋值：每个变量在使用前都必须赋值，变量赋值以后该变量才会被创建。</p>
+<p>等号 &#x3D; 用来给变量赋值。</p>
+<p>等号 &#x3D; 运算符左边是一个变量名，等号 &#x3D; 运算符右边是存储在变量中的值<img src="2026-11-23-171011.png" alt="屏幕截图 2026-11-23 171011" style="zoom:25%;" /></p>
+<p>Python有五个标准的数据类型：<br>Numbers（数字）<br>String（字符串）<br>List（列表）<br>Tuple（元组）<br>Dictionary（字典）</p>
+<p>Python支持四种不同的数字类型：<br>int（有符号整型）<br>long（长整型，也可以代表八进制和十六进制）<br>float（浮点型）<br>complex（复数）</p>
+<h3 id="✅-del-a-b"><a href="#✅-del-a-b" class="headerlink" title="✅ del a, b"></a>✅ <code>del a, b</code></h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">a = 10</span><br><span class="line">b = 20</span><br><span class="line">del a, b</span><br></pre></td></tr></table></figure>
+
+<p>含义：<strong>同时删除变量 a、变量 b 这两个名字</strong></p>
+<ul>
+<li>逗号是<code>del</code>语法自带的分隔符</li>
+<li>删掉之后，<code>a</code>和<code>b</code>都不能再用，<code>print(a)</code>、<code>print(b)</code>都会报<code>NameError</code></li>
+<li>这是文档 <code>del var1[,var2...]</code> 对应的标准用法</li>
+</ul>
+<h3 id="❌-del-a-b"><a href="#❌-del-a-b" class="headerlink" title="❌ del [a, b]"></a>❌ <code>del [a, b]</code></h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">a = 10</span><br><span class="line">b = 20</span><br><span class="line">del [a, b]</span><br></pre></td></tr></table></figure>
+
+<p>含义：先临时创建一个列表 <code>[a,b]</code>，然后<strong>删除这个临时列表本身</strong> 👉 重点：<strong>变量 a、b 还在！没有被删掉！</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">a = 10</span><br><span class="line">b = 20</span><br><span class="line">del [a, b]</span><br><span class="line">print(a)  # 依然可以输出10，a还存在</span><br></pre></td></tr></table></figure>
+
+<p>因为： <code>[a,b]</code> 是新建了一个列表对象，里面存的是 10、20；<code>del</code> 只把这个临时列表删掉，<strong>不会删除 a、b 这两个变量名</strong></p>
+<hr>
+<h3 id="一句话总结区别"><a href="#一句话总结区别" class="headerlink" title="一句话总结区别"></a>一句话总结区别</h3><ul>
+<li><code>del a, b</code>：删<strong>变量 a 和 变量 b</strong>（常用，符合文档写法）</li>
+<li><code>del [a, b]</code>：删<strong>临时列表</strong>，a、b 安然无恙（几乎不会这么写）</li>
+</ul>
+<p><strong>字符串的截断</strong>**<img src="2026-11-23-171542.png" alt="屏幕截图 2026-11-23 171542" style="zoom:25%;" /></p>
+<p>它支持字符，数字，字符串甚至可以包含列表（即嵌套）。</p>
+<p><strong>python列表</strong></p>
+<p>它支持字符，数字，字符串甚至可以包含列表（即嵌套</p>
+<p>列表用 [ ] 标识，是 python 最通用的复合数据类型。</p>
+<p>*python列表截取可以接收第三个参数，参数作用是截取的步长，以下实例在索引 1 到索引 4 的位置并设置为步长为 2（间隔一个位置）来截取字符串：<img src="2026-11-23-164527.png" alt="屏幕截图 2026-11-23 164527" style="zoom: 33%;" /></p>
+<h3 id="元组-vs-列表对比"><a href="#元组-vs-列表对比" class="headerlink" title="元组 vs 列表对比"></a>元组 vs 列表对比</h3><ul>
+<li>元组：用 <code>()</code> 包裹，<strong>不可变（immutable）</strong><br>创建之后，里面每一个元素不能修改、不能新增、不能删除。</li>
+<li>列表：用 <code>[]</code> 包裹，<strong>可变（mutable）</strong><br>创建之后，可以通过下标修改其中任意一个元素。</li>
+</ul>
+<p><strong>字典</strong>“{ }”标识。字典由索引(key)和它对应的值value组成<img src="2026-11-23-170431.png" alt="屏幕截图 2026-11-23 170431" style="zoom:33%;" /></p>
+<img src="2026-11-23-175803.png" alt="屏幕截图 2026-11-23 175803" style="zoom:25%;" />
+
+
+
+<img src="2026-11-23-175953.png" alt="屏幕截图 2026-11-23 175953" style="zoom:25%;" />
+
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://wangxinyi137.github.io/2026/11/27/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E7%AC%AC%E4%BA%8C%E7%AB%A0/" data-id="cmwybdthg0001vk8f4jx4fkd1" data-title="计算机网络学习笔记-第二章" class="article-share-link"><span class="fa fa-share">分享</span></a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/python/" rel="tag">python</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2026/11/27/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E7%AC%AC%E4%B8%89%E7%AB%A0/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">前一篇</strong>
+      <div class="article-nav-title">
+        
+          计算机网络学习笔记-第三章
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2026/11/26/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E7%AC%AC%E4%B8%80%E7%AB%A0/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">后一篇</strong>
+      <div class="article-nav-title">计算机网络学习笔记-第一章</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">分类</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/linux/">linux</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/py/">py</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/linux/" rel="tag">linux</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/pycharm/" rel="tag">pycharm</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/python/" rel="tag">python</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签云</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/linux/" style="font-size: 10px;">linux</a> <a href="/tags/pycharm/" style="font-size: 10px;">pycharm</a> <a href="/tags/python/" style="font-size: 20px;">python</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">归档</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2026/11/">十一月 2026</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2026/11/27/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E7%AC%AC%E5%9B%9B%E7%AB%A0/">计算机网络学习笔记-第四章</a>
+          </li>
+        
+          <li>
+            <a href="/2026/11/27/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E7%AC%AC%E4%B8%89%E7%AB%A0/">计算机网络学习笔记-第三章</a>
+          </li>
+        
+          <li>
+            <a href="/2026/11/27/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E7%AC%AC%E4%BA%8C%E7%AB%A0/">计算机网络学习笔记-第二章</a>
+          </li>
+        
+          <li>
+            <a href="/2026/11/26/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E7%AC%AC%E4%B8%80%E7%AB%A0/">计算机网络学习笔记-第一章</a>
+          </li>
+        
+          <li>
+            <a href="/2026/11/25/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2026 wangxinyi137<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.6.4.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>
