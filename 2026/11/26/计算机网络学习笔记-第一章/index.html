@@ -6,28 +6,29 @@
   
   <title>计算机网络学习笔记-第一章 | 王欣旖的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="Day1： 1.pycharm的安装与基础使用   2.认识了什么是变量 ,print,函数，type语句，三种常见的字面量（int,float,字符串）变量是用来贮存数据的   print（a,b,c,d….)    输出字符串是要加双引号print(“aaaaa”)  int float不用   !(C:\Users\王欣旖\Pictures\Screenshots\屏幕截图 2026-11-">
+  <meta name="description" content="Day1： 1.pycharm的安装与基础使用   2.认识了什么是变量 ,print,函数，type语句，三种常见的字面量（int,float,字符串）变量是用来贮存数据的   print（a,b,c,d….)    输出字符串是要加双引号print(“aaaaa”)  int float不用      type语句是用来查看数据类型的   python程序开发的三种方法  a.Win+R  c">
 <meta property="og:type" content="article">
 <meta property="og:title" content="计算机网络学习笔记-第一章">
 <meta property="og:url" content="https://wangxinyi137.github.io/2026/11/26/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E7%AC%AC%E4%B8%80%E7%AB%A0/index.html">
 <meta property="og:site_name" content="王欣旖的博客">
-<meta property="og:description" content="Day1： 1.pycharm的安装与基础使用   2.认识了什么是变量 ,print,函数，type语句，三种常见的字面量（int,float,字符串）变量是用来贮存数据的   print（a,b,c,d….)    输出字符串是要加双引号print(“aaaaa”)  int float不用   !(C:\Users\王欣旖\Pictures\Screenshots\屏幕截图 2026-11-">
+<meta property="og:description" content="Day1： 1.pycharm的安装与基础使用   2.认识了什么是变量 ,print,函数，type语句，三种常见的字面量（int,float,字符串）变量是用来贮存数据的   print（a,b,c,d….)    输出字符串是要加双引号print(“aaaaa”)  int float不用      type语句是用来查看数据类型的   python程序开发的三种方法  a.Win+R  c">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="file:///C:/Users/%E7%8E%8B%E6%AC%A3%E6%97%96/Pictures/Screenshots/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202026-11-22%20160240.png?lastModify=1795625000">
-<meta property="og:image" content="file:///C:/Users/%E7%8E%8B%E6%AC%A3%E6%97%96/Pictures/Screenshots/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202026-11-22%20210241.png?lastModify=1795625000">
-<meta property="og:image" content="file:///C:/Users/%E7%8E%8B%E6%AC%A3%E6%97%96/Pictures/Screenshots/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202026-11-22%20165247.png?lastModify=1795625000">
-<meta property="og:image" content="file:///C:/Users/%E7%8E%8B%E6%AC%A3%E6%97%96/Pictures/Screenshots/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202026-11-22%20170332.png?lastModify=1795625000">
-<meta property="og:image" content="file:///C:/Users/%E7%8E%8B%E6%AC%A3%E6%97%96/Pictures/Screenshots/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202026-11-22%20155008.png?lastModify=1795625000">
-<meta property="og:image" content="file:///C:/Users/%E7%8E%8B%E6%AC%A3%E6%97%96/Pictures/Screenshots/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202026-11-22%20172948.png?lastModify=1795625000">
-<meta property="og:image" content="file:///C:/Users/%E7%8E%8B%E6%AC%A3%E6%97%96/Pictures/Screenshots/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202026-11-22%20172615.png?lastModify=1795625000">
-<meta property="og:image" content="file:///C:/Users/%E7%8E%8B%E6%AC%A3%E6%97%96/Pictures/Screenshots/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202026-11-24%20163743.png?lastModify=1795625000">
-<meta property="og:image" content="file:///C:/Users/%E7%8E%8B%E6%AC%A3%E6%97%96/Pictures/Screenshots/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202026-11-24%20172703.png?lastModify=1795625000">
+<meta property="og:image" content="https://wangxinyi137.github.io/2026/11/26/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E7%AC%AC%E4%B8%80%E7%AB%A0/2026-11-22-160240.png">
+<meta property="og:image" content="https://wangxinyi137.github.io/2026/11/26/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E7%AC%AC%E4%B8%80%E7%AB%A0/2026-11-22-210241.png">
+<meta property="og:image" content="https://wangxinyi137.github.io/2026/11/26/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E7%AC%AC%E4%B8%80%E7%AB%A0/2026-11-22-165247.png">
+<meta property="og:image" content="https://wangxinyi137.github.io/2026/11/26/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E7%AC%AC%E4%B8%80%E7%AB%A0/2026-11-22-170625.png">
+<meta property="og:image" content="https://wangxinyi137.github.io/2026/11/26/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E7%AC%AC%E4%B8%80%E7%AB%A0/2026-11-22-170332.png">
+<meta property="og:image" content="https://wangxinyi137.github.io/2026/11/26/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E7%AC%AC%E4%B8%80%E7%AB%A0/2026-11-22-155008.png">
+<meta property="og:image" content="https://wangxinyi137.github.io/2026/11/26/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E7%AC%AC%E4%B8%80%E7%AB%A0/2026-11-22-172948.png">
+<meta property="og:image" content="https://wangxinyi137.github.io/2026/11/26/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E7%AC%AC%E4%B8%80%E7%AB%A0/2026-11-22-172615.png">
+<meta property="og:image" content="https://wangxinyi137.github.io/2026/11/26/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E7%AC%AC%E4%B8%80%E7%AB%A0/2026-11-24-163743.png">
+<meta property="og:image" content="https://wangxinyi137.github.io/2026/11/26/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E7%AC%AC%E4%B8%80%E7%AB%A0/2026-11-24-172703.png">
 <meta property="article:published_time" content="2026-11-25T16:34:40.000Z">
-<meta property="article:modified_time" content="2026-11-25T22:24:24.327Z">
+<meta property="article:modified_time" content="2026-11-27T01:13:19.351Z">
 <meta property="article:author" content="wangxinyi137">
 <meta property="article:tag" content="pycharm">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="file:///C:/Users/%E7%8E%8B%E6%AC%A3%E6%97%96/Pictures/Screenshots/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202026-11-22%20160240.png?lastModify=1795625000">
+<meta name="twitter:image" content="https://wangxinyi137.github.io/2026/11/26/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E7%AC%AC%E4%B8%80%E7%AB%A0/2026-11-22-160240.png">
   
     <link rel="alternate" href="/atom.xml" title="王欣旖的博客" type="application/atom+xml">
   
@@ -111,14 +112,14 @@
     <div class="e-content article-entry" itemprop="articleBody">
       
         <p>Day1：</p>
-<p>1.pycharm的安装与基础使用 <img src="file://C:/Users/%E7%8E%8B%E6%AC%A3%E6%97%96/Pictures/Screenshots/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202026-11-22%20160240.png?lastModify=1795625000" alt="屏幕截图 2026-11-22 160240"></p>
-<p><img src="file://C:/Users/%E7%8E%8B%E6%AC%A3%E6%97%96/Pictures/Screenshots/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202026-11-22%20210241.png?lastModify=1795625000" alt="屏幕截图 2026-11-22 210241"></p>
-<p><img src="file://C:/Users/%E7%8E%8B%E6%AC%A3%E6%97%96/Pictures/Screenshots/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202026-11-22%20165247.png?lastModify=1795625000" alt="屏幕截图 2026-11-22 172654">2.认识了什么是变量 ,print,函数，type语句，三种常见的字面量（int,float,字符串）变量是用来贮存数据的   print（a,b,c,d….)    输出字符串是要加双引号print(“aaaaa”)  int float不用   !(C:\Users\王欣旖\Pictures\Screenshots\屏幕截图 2026-11-22 170625.png)   type语句是用来查看数据类型的   python程序开发的三种方法  a.Win+R  cmd 输入python 执行单行代码&#x2F;创建py文件 在终端里执行python文件      b.pycharm <img src="file://C:/Users/%E7%8E%8B%E6%AC%A3%E6%97%96/Pictures/Screenshots/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202026-11-22%20170332.png?lastModify=1795625000" alt="屏幕截图 2026-11-22 170332"></p>
-<p><img src="file://C:/Users/%E7%8E%8B%E6%AC%A3%E6%97%96/Pictures/Screenshots/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202026-11-22%20155008.png?lastModify=1795625000" alt="屏幕截图 2026-11-22 154453"></p>
-<p><img src="file://C:/Users/%E7%8E%8B%E6%AC%A3%E6%97%96/Pictures/Screenshots/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202026-11-22%20172948.png?lastModify=1795625000" alt="屏幕截图 2026-11-22 172948"></p>
-<p><img src="file://C:/Users/%E7%8E%8B%E6%AC%A3%E6%97%96/Pictures/Screenshots/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202026-11-22%20172615.png?lastModify=1795625000" alt="屏幕截图 2026-11-22 172615">3.变量没有类型，但是他储存的数据有类型 </p>
-<p>   <img src="file://C:/Users/%E7%8E%8B%E6%AC%A3%E6%97%96/Pictures/Screenshots/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202026-11-24%20163743.png?lastModify=1795625000" alt="屏幕截图 2026-11-24 163743"></p>
-<p><img src="file://C:/Users/%E7%8E%8B%E6%AC%A3%E6%97%96/Pictures/Screenshots/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202026-11-24%20172703.png?lastModify=1795625000" alt="img"></p>
+<p>1.pycharm的安装与基础使用 <img src="/2026/11/26/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E7%AC%AC%E4%B8%80%E7%AB%A0/2026-11-22-160240.png" alt="屏幕截图 2026-11-22 160240"></p>
+<p><img src="/2026/11/26/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E7%AC%AC%E4%B8%80%E7%AB%A0/2026-11-22-210241.png" alt="屏幕截图 2026-11-22 210241"></p>
+<p><img src="/2026/11/26/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E7%AC%AC%E4%B8%80%E7%AB%A0/2026-11-22-165247.png" alt="屏幕截图 2026-11-22 172654">2.认识了什么是变量 ,print,函数，type语句，三种常见的字面量（int,float,字符串）变量是用来贮存数据的   print（a,b,c,d….)    输出字符串是要加双引号print(“aaaaa”)  int float不用   <img src="/2026/11/26/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E7%AC%AC%E4%B8%80%E7%AB%A0/2026-11-22-170625.png">   type语句是用来查看数据类型的   python程序开发的三种方法  a.Win+R  cmd 输入python 执行单行代码&#x2F;创建py文件 在终端里执行python文件      b.pycharm <img src="/2026/11/26/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E7%AC%AC%E4%B8%80%E7%AB%A0/2026-11-22-170332.png" alt="屏幕截图 2026-11-22 170332"></p>
+<p><img src="/2026/11/26/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E7%AC%AC%E4%B8%80%E7%AB%A0/2026-11-22-155008.png" alt="屏幕截图 2026-11-22 154453"></p>
+<p><img src="/2026/11/26/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E7%AC%AC%E4%B8%80%E7%AB%A0/2026-11-22-172948.png" alt="屏幕截图 2026-11-22 172948"></p>
+<p><img src="/2026/11/26/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E7%AC%AC%E4%B8%80%E7%AB%A0/2026-11-22-172615.png" alt="屏幕截图 2026-11-22 172615">3.变量没有类型，但是他储存的数据有类型 </p>
+<p>   <img src="/2026/11/26/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E7%AC%AC%E4%B8%80%E7%AB%A0/2026-11-24-163743.png" alt="屏幕截图 2026-11-24 163743"></p>
+<p><img src="/2026/11/26/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E7%AC%AC%E4%B8%80%E7%AB%A0/2026-11-24-172703.png" alt="img"></p>
 <p>注意：</p>
 <p>1.在终端中运行python文件时不要进入python直接在cmd里</p>
 <p>2.上图的错误主要是路径问题</p>
@@ -130,7 +131,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://wangxinyi137.github.io/2026/11/26/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E7%AC%AC%E4%B8%80%E7%AB%A0/" data-id="cmwwoy3u80000p08f9aekatuu" data-title="计算机网络学习笔记-第一章" class="article-share-link"><span class="fa fa-share">分享</span></a>
+      <a data-url="https://wangxinyi137.github.io/2026/11/26/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E7%AC%AC%E4%B8%80%E7%AB%A0/" data-id="cmwyafdxn0000wg8ffel6hy6c" data-title="计算机网络学习笔记-第一章" class="article-share-link"><span class="fa fa-share">分享</span></a>
       
       
       
